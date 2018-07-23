@@ -1,0 +1,51 @@
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-image:
+  url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/selga.png");
+}
+
+#container {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(3, 100px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  margin: 20px auto;
+  width: 340px;
+
+}
+
+#player {
+  text-align: center;
+}
+
+#win-info {
+  display: none;
+}
+
+.square {
+  border: 2px solid black;
+}
+
+.square {
+  background-color: white;
+}
+
+
+#win-info p{
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+#win-info button {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  background-color: green;
+  border: 2px solid black;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+Zack Rossman
+HTML file for CS135 Assignment1
+Professor Salloum-->
+
+<html>
+  <!--head of webpage-->
+  <head>
+    <!--The title of the webpage-->
+    <title>Detroit Tigers</title>
+    <meta name = "description" content = "A fan page for the Detroit Tigers">
+    <meta name = "author" content = "Zack Rossman">
+    <!--link the external css style sheet-->
+    <link rel = "stylesheet" href = "ps1-1.css">
+    <!--internal css styling-->
+    <style>
+      /*give website a backgorund image*/
+      body {
+        background-image: url("Comerica.jpg");
+        background-size: cover;
+      }
+      /*align elements of the table to center*/
+      td {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header and title for the webpage-->
+    <header><span>Follow <em>DetroitTigers1</em> on Instagram and Facebook</span></header>
+    <h1><span>Detroit Tigers News Source</span></h1>
+    <!--contains all the main content, displayed in a CSS grid-->
+    <main>
+        <!-- reconstruct the tigers batting order with name, average, and position-->
+      <div class = "white" id = "lineups">
+        <h3>2016 Starting Linup</h3>
+        <table>
+          <thead>
+            <!--Define the table headers and underline them-->
+            <tr style = "text-decoration: underline">
+              <th>Player Name</th>
+              <th>Batting Average</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jose Iglesias</td>
+              <td>.250</td>
+              <td>SS</td>
+            </tr>
+            <tr>
+              <td>Ian Kinsler</td>
+              <td>.320</td>
+              <td>2B</td>
+            </tr>
+            <tr>
+              <td>Miguel Cabrera</td>
+              <td>.340</td>
+              <td>1B</td>
+            </tr>
+            <tr>
+              <td>Victor Martinez</td>
+              <td>.268</td>
+              <td>DH</td>
+            </tr>
+            <tr>
+              <td>Nick Castellanos</td>
+              <td>.301</td>
+              <td>3B</td>
+            </tr>
+            <tr>
+              <td>Alex Collins</td>
+              <td>.298</td>
+              <td>CF</td>
+            </tr>
+            <tr>
+              <td>Alex Avila</td>
+              <td>.245</td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td>JD Martinez</td>
+              <td>.364</td>
+              <td>RF</td>
+            </tr>
+            <tr>
+              <td>Johnny Damon</td>
+              <td>.304</td>
+              <td>RF</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- section contains images and videos of Tigers content-->
+      <div class = "white media">
+        <h3>Tigers Media</h3>
+        <!-- embed a youtube video-->
+        <iframe src="https://www.youtube.com/embed/FqKRxsqQGtI"
+   width= 280 height=157>
+        </iframe>
+        <br>
+        <!-- embed images-->
+        <img id = "castellanos" src = "castellanos.jpg" width = 125 height= 100 alt= "Nick Castellanos">
+        <img id = "miggy" src = "cabby.jpg" width = 174 height = 100 alt = "Miguel Cabrera">
+      </div>
+      <!-- liniks to related detroit tiger headlines-->
+      <div class = "articles">
+        <article class = "white" id = "headlines">
+          <h5 style = "position: relative; top: 10px;">Related Headlines</h5>
+          <!-- nav section allows users to navigate through tigers articles on ESPN-->
+          <nav>
+            <ul>
+            <!-- embedlinks to ESPN articles-->
+            <li><a href = "http://www.espn.com/mlb/story/_/id/22200803/detroit-tigers-general-manager-says-no-setbacks-michael-fulmer-victor-martinez">
+              Michael Fulmer and Victor Martinez on-track for spring training</a></li>
+            <li><a href = "http://www.espn.com/mlb/story/_/id/22137156/jose-iglesias-detroit-tigers-reach-1-year-6275000-deal-avoid-arbitration">
+              Tigers resign Jose Iglesias to $1 deal</a></li>
+            <li><a href = "http://www.espn.com/mlb/team/_/name/det/detroit-tigers">
+              Castellanos agrees to $6.05 million extension</a></li>
+            </ul>
+          </nav>
+        </article>
+      </div>
+      <!--section containing static content regarding free agents-->
+      <div class = "articles">
+        <article class = "white" id = "free_agents">
+          <h5 style = "position: relative; top: 10px;">Top Free Agent Targets</h5>
+          <ol>
+            <li>Pedro Martinez: LHP, San Francisco Giants</li>
+            <li>Yadier Molina: C, St. Louis Cardinals</li>
+            <li>Jose Valverde: P, Tampa Bay Rays</li>
+          </ol>
+        </article>
+      </div>
+    </main>
+      <!--about the author section-->
+      <section id = "about">
+        <h4><span>About the Author: Zack Rossman</span></h4>
+        <p><span>Zack is a Sophomore at Claremont McKenna College, studying Computer Science<br>
+          and economics. This webpage was inspired by his passion for baseball and the<br>
+          Detroit Tigers in particular, and he hopes it will turn things around for what<br>
+          has been a dismal past three seasons for the team</span></p>
+      </section>
+    <!--footer-->
+    <footer><span>Any questions or comments, please call (425) 241-7707</span></footer>
+  </body>
+
+</html>

@@ -1,0 +1,31 @@
+.ok, .info, .error {
+	padding: 0px 2px;
+	margin: 0 5px;
+}
+
+
+
+.ok {
+	background: #cfc;
+	border: 2px solid #9c9;
+}
+
+.error {
+	background: #fcc;
+	border: 2px solid #c99;
+}
+
+.info {
+	background: #ffc;
+	border: 2px solid #cc9;
+}
+
+
+legend[for="chkAttr"] span, legend[for="radColleges"] span {
+	float: right;
+}
+
+span {
+	display: none;
+	font-size: 15px;
+}

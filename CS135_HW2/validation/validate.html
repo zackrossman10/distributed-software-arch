@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="my poll">
+    <meta name="author" content="m salloum">
+
+    <!-- The above meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Sample Registration Form</title>
+
+    <!-- Bootstrap (incase u need nice grid layout -->
+    <!-- download it from the website: http://getbootstrap.com
+         it was too large to include in template folder, but i included link below -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" >
+
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Your own CSS  -->
+    <link rel="stylesheet" href="css/validate.css">
+    <!-- Your own JavaScript  -->
+    <script src="js/validate.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+
+      <fieldset>
+      <form name="frmRegister" method="post" action="action_page.php">
+
+        <legend for="firstname">First name:
+        <input type="text" name="firstname"> </legend>
+
+        <legend for="lastname">Last name:
+        <input type="text" name="lastname"> </legend>
+
+        <legend for="username">Username:
+        <input type="text" name="username"> </legend>
+
+        <legend for="password">Password:
+        <input type="password" name="password"> </legend>
+
+        <legend for="email">Email:
+        <input type="txt" name="email"> </legend>
+
+        <legend for="phone">Phone:
+        <input type="txt" name="phone"> </legend>
+
+        <legend for="radColleges"> College Selection:
+        <p><input type="radio" name="radColleges" value="Claremont McKenna" /> Claremont McKenna</p>
+        <p><input type="radio" name="radColleges" value="Scripps" /> <img width="40px" height="40px" src="images/scripps.png" /> Scripps </p>
+        <p><input type="radio" name="radColleges" value="Pitzer" /> Pitzer </p>
+        <p><input type="radio" name="radColleges" value="Pomona" /> Pomona </p>
+        <p><input type="radio" name="radColleges" value="Harvey Mudd" /> Harvey Mudd </p>
+        </legend>
+
+        <!-- Radio Button Example -->
+
+        <legend for="chkAttr"> Attractions (select 2+)
+        <p><input type="checkbox" name="chkAttr" value="Disney" /> Disney </p>
+        <p><input type="checkbox" name="chkAttr" value="Sea World" /> Sea World </p>
+        <p><input type="checkbox" name="chkAttr" value="Universal" /> Universal </p>
+        <p><input type="checkbox" name="chkAttr" value="CS 40" /> CS 135! </p>
+        </legend>
+
+        <p><input type="button" value="Submit"/></p>
+
+
+    </form></fieldset>
+  </div>
+
+
+
+  </body>
+</html>

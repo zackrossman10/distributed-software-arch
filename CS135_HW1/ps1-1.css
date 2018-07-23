@@ -1,0 +1,60 @@
+/*
+Zack Rossman
+CSS Style Sheet for CS135 Assignment1
+Professor Salloum*/
+
+/*alignt header text in the center of the page*/
+h1 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+/*give headers a footers blue text and an orange backgound*/
+header span {
+  color: #000099;
+  background-color: #ff6600;
+}
+
+footer span{
+  color: #000099;
+  background-color:  #ff6600;
+}
+
+/*make a 2X2 grid to organize the main content*/
+main {
+  display: grid;
+  grid-template: fit-content(500px) fit-content(500px)/ 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+/*give content a transparent white background*/
+.white {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*make sure the backgrounds fit only to the text, not the entire text container*/
+span {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*make the hyperlink text appear noraml (black and not underlined)*/
+a {
+  color: black;
+  text-decoration: none;
+}

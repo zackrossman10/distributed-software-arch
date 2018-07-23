@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type = "text/css"  href = "tictactoe.css"/>
+    <script src="tictactoe.js"></script>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <!--tell players whose turn it is-->
+    <h4 id = 'player'>Red Player's Turn</h4>
+    <!-- hold the grid that represents tic tac toe board-->
+    <div id = "container">
+      <div class = "square" id = "one" onclick="play('one')">
+      </div>
+      <div class = "square" id = "two" onclick="play('two')">
+      </div>
+      <div class = "square" id = "three" onclick="play('three')">
+      </div>
+      <div class = "square" id = "four" onclick="play('four')">
+      </div>
+      <div class = "square" id = "five" onclick="play('five')">
+      </div>
+      <div class = "square" id = "six" onclick="play('six')">
+      </div>
+      <div class = "square" id = "seven" onclick="play('seven')">
+      </div>
+      <div class = "square" id = "eight" onclick="play('eight')">
+      </div>
+      <div class = "square" id = "nine" onclick="play('nine')">
+      </div>
+    </div>
+    <div id = "win-info">
+      <p id = 'print'></p>
+      <button onclick = 'reset()'>Play Again</button>
+    </div>
+
+  </body>
+</html>
